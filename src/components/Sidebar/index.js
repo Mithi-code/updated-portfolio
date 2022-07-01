@@ -4,8 +4,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faLinkedin,
   faGithub,
-  faYoutube,
-  faSkype,
+  faFacebook,
+  faInstagram,
 } from '@fortawesome/free-brands-svg-icons'
 import { faHome, faUser, faEnvelope, faSuitcase, faGear, faBars} from '@fortawesome/free-solid-svg-icons'
 import { Link, NavLink } from 'react-router-dom'
@@ -80,16 +80,16 @@ const Sidebar = () => {
         </li>
         <li>
           <a
-            href="#"
+            href="https://www.facebook.com/mithlesh1.2.3"
             rel="noreferrer"
             target="_blank"
           >
-            <FontAwesomeIcon icon={faYoutube} color="#4d4d4e" />
+            <FontAwesomeIcon icon={faFacebook} color="#4d4d4e" />
           </a>
         </li>
         <li>
-          <a href="#" rel="noreferrer" target="_blank">
-            <FontAwesomeIcon icon={faSkype} color="#4d4d4e" />
+          <a href="https://www.instagram.com/lazy_mithi/?hl=en" rel="noreferrer" target="_blank">
+            <FontAwesomeIcon icon={faInstagram} color="#4d4d4e" />
           </a>
         </li>
       </ul>
