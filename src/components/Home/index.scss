@@ -90,25 +90,13 @@
   }
 }
 
-// .footer {
-//   position: absolute;
-//   bottom: 0;
-//   width: 100%;
-//   text-align: center;
-//   font-size: 22px;
-//   // display: none;
-//   color: #ffd700;
-//   background: #000;
-//   height: 60px;
-//   margin-left: 0;
-// }
-
 @media (max-width: 960px) {
   .home-page {
     display: flex;
     flex-direction: column;
     overflow-y: auto;
     margin: 130px 0 0 5%;
+    height: calc(100vh - 130px);
 
     .text-zone {
       width: 100%;
@@ -137,9 +125,4 @@
       left: -5%;
     }
   }
-
-  // .footer {
-  //   display: block;
-  //   width: 100%;
-  // }
 }

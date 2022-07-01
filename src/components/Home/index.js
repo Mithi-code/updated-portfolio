@@ -96,9 +96,6 @@ const effect = () =>{
             </div>
           </div>
         </div>
-        {/* <div className='footer'>
-          <p>Copyright Ⓒ 2022 LazyCoder. All Rights Reserved</p>
-        </div> */}
       </div>
 
       <Loader type="pacman" />

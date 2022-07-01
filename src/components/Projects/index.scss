@@ -73,7 +73,7 @@
 
 @media (max-width: 960px){
   .project-page {
-    height: 100vh;
+    height: calc(100vh - 100px);
     overflow-y: auto;
     margin-top: 100px;
   }
@@ -87,13 +87,14 @@
 
 @media (max-width: 600px){
   .project-page {
+    height: calc(100vh - 100px);
     overflow-y: auto;
-    height: 100vh;
+    margin-top: 100px;
   }
 
   .projects-cards {
     grid-template-columns: 1fr;
-    margin: 0;
     padding-bottom: 50px;
+    margin-bottom: 300px;
   }
 }

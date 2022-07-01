@@ -112,7 +112,6 @@ card.forEach((c)=>{
                 <div className='cards' key={data.ID}>
                   <img src={data.Image} className='img' alt='doc-app' onClick={(e)=>{
                     e.target.parentElement.querySelector('#modal').click()
-                    console.log(e.target.parentNode)
                   }}/>
                   <Modal data={data} />
                 </div>

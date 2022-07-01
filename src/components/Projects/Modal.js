@@ -27,6 +27,10 @@ const ModalWrapper = styled.div`
   position: relative;
   z-index: 999;
   border-radius: 10px;
+  @media (max-width: 960px) {
+    width: 90%;
+    margin-left: 20px;
+  }
 
 `;
 
@@ -52,15 +56,19 @@ const ModalContent = styled.div`
     margin-bottom: 1rem;
     font-size: 16px;
   }
-
-  button {
-    padding: 10px 24px;
-    background: #141414;
-    color: #fff;
-    border: none;
-    border-radius: 10px;
-  }
 `;
+
+const Button = styled.button`
+{
+  padding: 10px 24px;
+  background: #141414;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 16px;
+}
+;`
 
 const CloseModalButton = styled(MdClose)`
   cursor: pointer;
@@ -122,7 +130,7 @@ export const Modal = ({data}) => {
               <ModalContent>
                 <p>{data.Title}</p>
                 <p>{data.Descrption}</p>
-                <button>Source Code..</button>
+                <Button as="a" href={data.Link} target="_blank">Source Code..</Button>
               </ModalContent>
               <CloseModalButton
                 aria-label='Close modal'
