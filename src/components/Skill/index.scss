@@ -1,12 +1,12 @@
 .skill-page {
   display: flex;
   align-items: center;
-  justify-content: center;
   height: 100vh;
   width: 100%;
  
   .text-zone {
     width: 40%;
+    margin-left: 200px;
   }
 
   h1 {
@@ -108,11 +108,11 @@
     align-items: center;
     flex-direction: column;
     overflow-y: auto;
-    height: 100vh;
 
     .text-zone {
-      width: 100%;
-      padding: 250px 0 50px 50px;
+      width: 90%;
+      padding: 200px 0 50px 20px;
+      margin: 0;
 
       h1 {
         font-size: 30px;

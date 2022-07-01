@@ -90,6 +90,19 @@
   }
 }
 
+// .footer {
+//   position: absolute;
+//   bottom: 0;
+//   width: 100%;
+//   text-align: center;
+//   font-size: 22px;
+//   // display: none;
+//   color: #ffd700;
+//   background: #000;
+//   height: 60px;
+//   margin-left: 0;
+// }
+
 @media (max-width: 960px) {
   .home-page {
     display: flex;
@@ -119,13 +132,14 @@
 
     .stage-cube-cont {
       width: 100%;
-      height: 100%;
-      margin-top: 0;
       right: 0;
-      top: 10%;
+      top: 0;
       left: -5%;
-      bottom: 40px;
-      margin-bottom: 20px;
     }
   }
+
+  // .footer {
+  //   display: block;
+  //   width: 100%;
+  // }
 }

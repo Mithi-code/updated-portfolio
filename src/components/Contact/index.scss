@@ -148,7 +148,7 @@
 
     .text-zone {
       width: 100%;
-      margin-top: 250px;
+      padding-top: 350px;
 
       p {
         font-size: 14px;
@@ -161,22 +161,27 @@
 
     .contact-form {
       width: 100%;
+      height: 100vh;
     }
 
     .map-wrap {
       width: 100%;
       height: 100vh;
       padding: 20px;
-      padding-bottom: 50px;
+      margin-top: 130px;
 
       .leaflet-container {
         width: 100%;
         height: 400px;
+        // padding-top: 150px;
       }
     }
   }
   .info-map {
     right: 20px;
-    top: 50%;
+    top: 80%;
+    width: 200px;
+    font-size: 12px;
+    opacity: 0.6;
   }
 }

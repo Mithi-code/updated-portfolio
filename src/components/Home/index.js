@@ -2,8 +2,8 @@ import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import Loader from 'react-loaders'
 import AnimatedLetters from '../AnimatedLetters'
+import { faGem } from '@fortawesome/free-solid-svg-icons'
 import {
-  faAngular,
   faCss3,
   faGitAlt,
   faHtml5,
@@ -77,7 +77,7 @@ const effect = () =>{
         <div className="stage-cube-cont">
           <div className="cubespinner">
             <div className="face1">
-              <FontAwesomeIcon icon={faAngular} color="#DD0031" />
+              <FontAwesomeIcon icon={faGem} color="#DD0031" />
             </div>
             <div className="face2">
               <FontAwesomeIcon icon={faHtml5} color="#F06529" />
@@ -96,6 +96,9 @@ const effect = () =>{
             </div>
           </div>
         </div>
+        {/* <div className='footer'>
+          <p>Copyright Ⓒ 2022 LazyCoder. All Rights Reserved</p>
+        </div> */}
       </div>
 
       <Loader type="pacman" />
