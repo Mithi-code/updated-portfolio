@@ -1,0 +1,128 @@
+.skill-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+ 
+  .text-zone {
+    width: 40%;
+  }
+
+  h1 {
+    color: #ffd700;
+    font-size: 50px;
+    height: 50px;
+    font-family: 'Coolvetica';
+    font-weight: 400;
+
+    &:before {
+      content: '<h1>';
+      font-family: 'La Belle Aurore', cursive;
+      color: #ffd700;
+      font-size: 18px;
+      position: absolute;
+      margin-top: -15px;
+      opacity: 0.6;
+      line-height: 18px;
+    }
+
+    &:after {
+      content: '<h1/>';
+      font-family: 'La Belle Aurore', cursive;
+      color: #ffd700;
+      font-size: 18px;
+      line-height: 18px;
+      position: relative;
+      left: -30px;
+      bottom: -20px;
+      margin-left: 20px;
+      opacity: 0.6;
+    }
+  }
+}
+
+.skill-text {
+  color: #fff;
+  font-size: 14px;
+  line-height: 30px;
+
+  &:before {
+    content: '<p>';
+    font-family: 'La Belle Aurore', cursive;
+    color: #ffd700;
+    font-size: 18px;
+    position: absolute;
+    margin-top: -20px;
+    opacity: 0.6;
+  }
+
+  &:after {
+    content: '<p/>';
+    font-family: 'La Belle Aurore', cursive;
+    color: #ffd700;
+    font-size: 18px;
+    position: absolute;
+    margin-top: 18px;
+    margin-left: 20px;
+    animation: fadeIn 1s 1.7s backwards;
+    opacity: 0.6;
+  }
+}
+
+.exp-bar {
+  width: 30%;
+
+  li {
+    list-style: none;
+    font-weight: 400;
+    font-size: 18px;
+    color: #fff;
+  }
+}
+
+.progress {
+  background-color: #d8d8d8;
+  border-radius: 20px;
+  margin: 10px 0;
+  height: 20px;
+  width: 100%;
+}
+
+.progress-done {
+  background: linear-gradient(to left, #f2709c, #ff9472);
+  box-shadow: 0 3px 3px -5px #f2709c, 0 2px 5px #f2709c;
+  border-radius: 20px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 0;
+  opacity: 0;
+  transition: 1s ease 0.3s;
+}
+
+@media (max-width: 960px) {
+  .skill-page {
+    align-items: center;
+    flex-direction: column;
+    overflow-y: auto;
+    height: 100vh;
+
+    .text-zone {
+      width: 100%;
+      padding: 250px 0 50px 50px;
+
+      h1 {
+        font-size: 30px;
+      }
+    }
+  }
+  .exp-bar {
+    width: 100%;
+    margin-left: 0;
+    padding-right: 50px;
+    padding-bottom: 50px;
+   }
+}
